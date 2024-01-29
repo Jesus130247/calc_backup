@@ -1,0 +1,96 @@
+/* style for calculator */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: beige;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin:0; 
+}
+header {
+    min-height:50px; 
+    background:gray;
+    width: 100%;
+}
+footer {
+    min-height:50px; 
+    background: gray;
+    width: 100%;
+}
+article {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+#title {
+    margin-bottom: 75%;
+    justify-self: flex-start;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    justify-self:center;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 5px;
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: gray;
+    width: 240px;
+}
+#display1, #display2 {
+    display: flex;
+    width: 240px;
+    height: 25px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: white;  
+}
+#display1 {
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: gray;
+}
+#display2 {
+    border-width: 0 5px 5px 5px;
+    border-style: solid;
+    border-color: gray;
+}
+#forButtons {
+    display: flex;
+    width: 100%;
+    background-color: lightsteelblue;
+    flex-direction: column;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+button {
+    color: white;
+    background-color: brown;
+    display: flex;
+    flex: auto;
+    
+}
+#forButtons div {
+    display: flex;
+    flex: 1;
+}
+.row1 .clear, .row1 .del{
+    width: 90px;
+    padding: 0px;
+    justify-content: center;
+}
+.row2 button, .row3 button, .row4 button, .row5 button, .row1 .divide {
+    width: 60px;
+    padding: 0px;
+    justify-content: center;
+}
