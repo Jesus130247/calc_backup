@@ -60,6 +60,8 @@ function multiplyThis (x,y) {return x*y}
 // clicking more operators, solves the current equation, pushes that value to y, stores it, and awaits further instructions.
 function storeValue(operator) { 
     if (x=='') {
+        display1.textContent = y+operator
+        oldoperator = operator
         return
     } else if (y=='') {
         display1.textContent = x + operator
@@ -68,9 +70,9 @@ function storeValue(operator) {
         x = ''
         oldoperator = operator
     } else if (oldoperator=='x') { 
-        display1.textContent = multiplyThis(parseFloat(y),parseFloat(x)) + operator
+        display1.textContent = round(multiplyThis(parseFloat(y),parseFloat(x)),1) + operator
         display2.textContent = null
-        newValue=multiplyThis(parseFloat(y),parseFloat(x))
+        newValue=round(multiplyThis(parseFloat(y),parseFloat(x)),1)
         oldoperator = operator
         y = newValue
         x=''
@@ -107,9 +109,9 @@ function equalsF(operator) {
     if (x=='') {
         return
     } else if (operator=='x') { 
-        display1.textContent = multiplyThis(parseFloat(x),parseFloat(y))
+        display1.textContent = round(multiplyThis(parseFloat(y),parseFloat(x)),1)
         display2.textContent = null
-        y=multiplyThis(parseFloat(x),parseFloat(y))
+        y=round(multiplyThis(parseFloat(y),parseFloat(x)),1)
         x=''
         oldoperator=''
     } else if (operator=='-') {
