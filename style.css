@@ -25,7 +25,7 @@ article {
     flex-direction: column;
 }
 #title {
-    margin-bottom: 75%;
+    margin-bottom: 25%;
     justify-self: flex-start;
 }
 #container {
@@ -33,7 +33,7 @@ article {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: darkgray;
+    background-color: rgb(107, 131, 163);
     justify-self:center;
     width: auto;
     height: auto;
@@ -43,41 +43,50 @@ article {
     border-right: 5px;
     border-bottom: 5px;
     border-style: solid;
-    border-color: gray;
-    width: 240px;
+    border-color: rgb(70, 58, 20);
+    width: 360px;
+    height: 375px;
 }
 #display1, #display2 {
     display: flex;
-    width: 240px;
-    height: 25px;
+    width: 340px;
+    height: 50px;
     justify-content: flex-end;
-    align-items: flex-end;
-    background-color: white;  
+    align-items: center;
+    background-color: rgb(44, 43, 43);  
+    font-size: 27px;
 }
 #display1 {
-    border-width: 5px 5px 0 5px;
+    border-width: 5px 10px 0 10px;
     border-style: solid;
-    border-color: gray;
+    border-color: darkgray;
+    color: gold;
+    
 }
 #display2 {
-    border-width: 0 5px 5px 5px;
+    border-width: 0 10px 5px 10px;
     border-style: solid;
-    border-color: gray;
+    border-color: darkgray;
+    color: white;
 }
 #forButtons {
     display: flex;
     width: 100%;
-    background-color: lightsteelblue;
+    background-color: gray;
     flex-direction: column;
     position: relative;
     white-space: nowrap;
     margin-top: 5px;
+    flex: 1;
 }
 button {
     color: white;
-    background-color: brown;
     display: flex;
     flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    border-radius: 15px;
     
 }
 #forButtons div {
@@ -85,12 +94,21 @@ button {
     flex: 1;
 }
 .row1 .clear, .row1 .del{
+    width: 135px;
+    padding: 0px;
+    background-color: darkslateblue;
+    justify-content: center;
+}
+.number, .dot {
     width: 90px;
     padding: 0px;
     justify-content: center;
+    background-color: rgb(163, 45, 29);
 }
-.row2 button, .row3 button, .row4 button, .row5 button, .row1 .divide {
-    width: 60px;
+.divide, .multiply, .subtract, .add, .equal {
+    width: 90px;
     padding: 0px;
     justify-content: center;
+    background-color: rgb(223, 72, 160);
 }
+
