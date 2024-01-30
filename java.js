@@ -60,8 +60,6 @@ function multiplyThis (x,y) {return x*y}
 // clicking more operators, solves the current equation, pushes that value to y, stores it, and awaits further instructions.
 function storeValue(operator) { 
     if (x=='') {
-        display1.textContent = y+operator
-        oldoperator = operator
         return
     } else if (y=='') {
         display1.textContent = x + operator
